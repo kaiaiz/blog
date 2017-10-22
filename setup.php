@@ -6,9 +6,9 @@ class Smarty_Guest extends Smarty
     function __construct()
     {
           parent::__construct();
-          $this->setTemplateDir(GUEST.'templates/');
-          $this->setCompileDir(GUEST.'templates/');
-          $this->setCacheDir(GUEST.'cache/');
+          $this->setTemplateDir(GUEST_PATH.'templates/');
+          $this->setCompileDir(GUEST_PATH.'templates/');
+          $this->setCacheDir(GUEST_PATH.'cache/');
           $this->caching = Smarty::CACHING_LIFETIME_CURRENT;
     }
 }

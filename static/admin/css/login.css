@@ -1,0 +1,87 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Microsoft Yahei;
+  font-size: 14px;
+}
+html,body{
+  width: 100%;
+  height: 100%;
+}
+body{
+  -webkit-tap-highlight-color:#fff;
+  display: flex;
+  background: url('../img/login-background.jpg') no-repeat center fixed;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+section.center{
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+/* left start */
+section.center p.left{
+  font-size: 24px;
+  color: #fff;
+  padding: 0 15px;
+  font-weight: normal;
+}
+/* left end */
+/* right start */
+section.center div.right{
+  width: 35%;
+  padding: 30 15px;
+  background-color: rgba(255,255,255,.2);
+  border: 1px solid rgba(255,255,255,.3);
+  box-shadow: 0 3px 0 rgba(12,12,12,.03);
+  border-radius: 3px;
+}
+section.center div.right form{
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+section.center div.right form p{
+  margin: 20px 0 10px;
+  color: #fff;
+}
+section.center div.right form input{
+  color: #333;
+  margin-top: 15px;
+  border: 1px solid #e5e6e7;
+  border-radius: 1px;
+  padding: 6px 12px;
+  height: 34px;
+  box-sizing: border-box;
+  line-height: 1.42857143;
+  outline: none;
+}
+section.center div.right form input[name=username]{
+  background: #fff url(../img/user.png) no-repeat 95% center;
+}
+section.center div.right form input[name=password]{
+  background: #fff url(../img/locked.png) no-repeat 95% center;
+}
+section.center div.right form button{
+  margin-top: 15px;
+  background-color: #1ab394;
+  border-color: #1ab394;
+  color: #fff;
+  border-radius: 3px;
+  padding: 6px 12px;
+  text-align: center;
+  font-weight: 400;
+  line-height: 1.42857143;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  letter-spacing: 10px;
+  cursor: pointer;
+}
+section.center div.right form button:hover{
+  background-color: #18a689;
+  border-color: #18a689;
+}
+/* right end */

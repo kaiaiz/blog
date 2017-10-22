@@ -9,7 +9,8 @@ include(LIBS_PATH.'mysql.class.php');
 //导入路由类库
 include(LIBS_PATH.'route.class.php');
 // 导入模板引擎
-include(SMARTY_PATH.'Smarty.class.php');
+// include(SMARTY_PATH.'Smarty.class.php');
+include_once('setup.php');
 //进入路由
 $route =new route();
 $route->set();

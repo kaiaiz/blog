@@ -1,0 +1,247 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+html,body{
+  width: 100%;
+  height: 100%;
+}
+.content {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+
+/* header start */
+
+header.top {
+  background-color: rgba(255, 255, 255, .8);
+  border-bottom: solid 3px #0a8;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, .175);
+  position: fixed;
+  width: 100%;
+}
+
+header.top>main {
+  display: flex;
+  justify-content: space-between;
+}
+
+header.top main a.left {
+  text-decoration: none;
+  display: block;
+  padding: 10px 20px;
+}
+
+header.top main ul.caption {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  flex-grow: 1;
+}
+
+header.top main ul.caption li {
+  padding: 18px 20px;
+  line-height: 20px;
+  font-size: 18px;
+}
+
+.active {
+  color: #00AA88;
+  font-weight: bold;
+}
+
+header.top main ul.caption li a {
+  text-decoration: none;
+  color: #333;
+}
+
+header.top main div.search {
+  width: 33%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+header.top main div.search form {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+header.top main div.search form>div {
+  font-size: 0;
+  width: 100%;
+}
+
+header.top main div.search input {
+  width: 53%;
+  border: 1px solid #0a8;
+  height: 34px;
+  line-height: 20px;
+  border-radius: 1px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+  padding: 6px;
+  box-sizing: border-box;
+}
+
+header.top main div.search button {
+  background-color: #0a8;
+  color: #fff;
+  border: solid 1px #0a8;
+  border-radius: 2px;
+  padding: 6px 15px;
+  line-height: 20px;
+  cursor: pointer;
+  text-align: center;
+  vertical-align: middle;
+  margin-top: -8px;
+}
+
+
+/* header end */
+/* banner start */
+div.banner{
+  height: 600px;
+  background: red;
+}
+/* banner end */
+/* container start */
+div.container{
+  padding: 0 10px;
+}
+div.container main.content ul.tabs{
+  list-style: none;
+  padding: 8px 15px;
+  color: #999;
+  margin-top: 15px;
+  display: flex;
+  justify-content: flex-start;
+} 
+div.container main.content ul.tabs li{
+  font-size: 22px;
+  padding-left: 10px;
+  font-weight: 500;
+}
+div.container main.content ul.tabs li a{
+  text-decoration: none;
+  color: #333;
+}
+div.container main.content div.blog{
+  display: flex;
+  justify-content: space-between;
+}
+div.container main.content div.blog div.left{
+  padding: 0 10px;
+  width: 66.66666667%;
+}
+div.container main.content div.blog div.left ul{
+  list-style: none;
+}
+div.container main.content div.blog div.left ul li{
+  box-shadow: 0 0 10px 7px rgba(218, 218, 218, 0.9);
+}
+div.container main.content div.blog div.left ul li div.detail{
+  margin-top: 15px;
+  padding-top: 15px;
+  padding-right: 20px;
+  line-height: 20px;
+}
+div.container main.content div.blog div.left ul li div.detail span{
+  background-color: #e33;
+  color: #fff;
+  padding: 0.1em 0.5em 0.2em;
+  border-radius: 0.25em;
+  font-size: 75%;
+}
+div.container main.content div.blog div.left ul li div.detail a{
+  text-decoration: none;
+  color: #333;
+}
+div.container main.content div.blog div.left ul li div.article{
+  display: flex;
+  justify-content: space-between;
+}
+div.container main.content div.blog div.left ul li div.article a{
+  width: 450px;
+  height: 200px;
+  display: block;
+  background-color: #f7faf9;
+  border-radius: 0 0 1px 1px;
+  box-shadow: 0 1px 2px #c5c5c5;
+  overflow: hidden;
+}
+div.container main.content div.blog div.left ul li div.article a img{
+  transition: .5s;
+  -webkit-transition: .5s;
+}
+div.container main.content div.blog div.left ul li div.article a:hover img{
+  transform: scale(1.2);
+  -webkit-transform:scale(1.2);
+}
+div.container main.content div.blog div.left ul li div.article p{
+  padding: 15px;
+  line-height: 25px;
+  text-indent: 2em;
+  color: #333;
+  font-size: 18px;
+}
+div.container main.content div.blog div.left ul li div.info{
+  margin-left: 10px;
+  text-indent: 0.4em;
+  color: #0a8;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+div.container main.content div.blog div.left ul li div.info p span.interval{
+  margin-right: 10px;
+}
+div.container main.content div.blog div.left ul li div.info a.look{
+  margin-right: 20px;
+  color: #0ae;
+  border: 1px solid #0ae;
+  border-radius: 2px;
+  padding: 6px 15px;
+  line-height: 20px;
+  transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1) 0s;
+  text-decoration: none;
+}
+div.container main.content div.blog div.left ul li div.info a.look:hover{
+color: #fff;
+background-color: #3bd;
+}
+div.container main.content div.blog div.right{
+  padding: 0 10px;
+  width: 33.33333333%;
+}
+div.container main.content div.blog div.right div.login span{
+  font-size: 20px;
+  font-weight: 500;
+  color: #333;
+}
+div.container main.content div.blog div.right div.login div{
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+div.container main.content div.blog div.right div.login a{
+  border:1px solid #0ae;
+  color: #fff;
+  background-color: #0ae;
+  border-radius: 2px;
+  transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1) 0s;
+  padding: 6px 15px;
+  text-decoration: none;
+}
+div.container main.content div.blog div.right div.login a:hover{
+  background-color: #3bd;
+  border-color: #3bd;
+}
+hr{
+  background-color: #ddd;
+  margin: 10px 0;
+  box-sizing: content-box;
+  width: 100%;
+}
+/* container end */
