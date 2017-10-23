@@ -1,67 +1,95 @@
-*{
+* {
   margin: 0;
-  padding: 0
+  padding: 0;
+   user-select: none;
 }
-main.content{
+
+.iconfont {
+  font-family: iconfont!important;
+  font-style: normal;
+  font-weight: 400!important;
+  -webkit-font-smoothing: antialiased;
+}
+
+main.content {
   min-width: 960px;
   margin: 0 auto;
 }
-html,body{
+
+html,
+body {
   width: 100%;
   height: 100%;
 }
-body{
+
+body {
   font-size: 14px;
 }
-a,body{
+
+a,
+body {
   color: #333;
 }
-div.person{
+
+div.person {
   padding-top: 30px;
   display: flex;
   justify-content: space-between;
 }
+
+div.person main.content{
+  display: flex;
+  justify-content: space-between;
+}
 /* left start */
-div.person div.left{
+
+div.person div.left {
   width: 66.66667%;
   padding-left: 15px;
   box-sizing: border-box;
 }
-div.person div.left div.main-top{
+
+div.person div.left div.main-top {
   margin-bottom: 20px;
   display: flex;
   justify-content: flex-start;
 }
-div.person div.left div.main-top > a{
-display: block;
-text-decoration: none;
-width: 80px;
-height: 80px;
-margin-left: -2px;
-margin-right: 20px;
+
+div.person div.left div.main-top>a {
+  display: block;
+  text-decoration: none;
+  width: 80px;
+  height: 80px;
+  margin-left: -2px;
+  margin-right: 20px;
 }
-div.person div.left div.main-top a img{
+
+div.person div.left div.main-top a img {
   width: 100%;
   height: 100%;
   border-radius: 50%;
   border: 1px solid #ddd;
 }
-div.person div.left div.main-top div.info >a{
-font-size: 22px;
-font-weight: 700;
-vertical-align: middle;
-text-decoration: none;
+
+div.person div.left div.main-top div.info>a {
+  font-size: 22px;
+  font-weight: 700;
+  vertical-align: middle;
+  text-decoration: none;
 }
-div.person div.left div.main-top div.info >ul.detail{
+
+div.person div.left div.main-top div.info>ul.detail {
   list-style: none;
   display: flex;
   justify-content: flex-start;
   margin-top: 5px;
 }
-div.person div.left div.main-top div.info >ul.detail li{
+
+div.person div.left div.main-top div.info>ul.detail li {
   line-height: 20px;
 }
-div.person div.left div.main-top div.info >ul.detail li a{
+
+div.person div.left div.main-top div.info>ul.detail li a {
   margin: 0 7px 6px 0;
   padding: 0 7px 0 0;
   border: 1px solid #f0f0f0;
@@ -69,32 +97,42 @@ div.person div.left div.main-top div.info >ul.detail li a{
   text-decoration: none;
   display: block;
 }
-div.person div.left div.main-top div.info >ul.detail li a p:first{
+
+div.person div.left div.main-top div.info>ul.detail li a p:first {
   margin-top: -3px;
   font-size: 16px;
   color: #333;
 }
-div.person div.left div.list ul.menu{
+
+div.person div.left div.list ul.menu {
   list-style: none;
   display: flex;
   justify-content: flex-start;
   margin-bottom: 20px;
   border-bottom: 1px solid #f0f0f0;
 }
-div.person div.left div.list ul.menu li{
+
+div.person div.left div.list ul.menu li {
   padding: 8px 0;
   margin-bottom: -1px;
 }
-div.person div.left div.list ul.menu li a{
-text-decoration: none;
-padding: 13px 20px;
-font-size: 16px;
-font-weight: 700;
-color: #969696;
-line-height: 25px;
-position: relative;
+
+div.person div.left div.list ul.menu li a {
+  text-decoration: none;
+  padding: 13px 20px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #969696;
+  line-height: 25px;
+  position: relative;
 }
-div.person div.left div.list ul.menu li a::after{
+
+div.person div.left div.list ul.menu li a span {
+  font-size: 18px;
+  margin-right: 5px;
+}
+
+div.person div.left div.list ul.menu li a::after {
   content: '';
   display: block;
   position: absolute;
@@ -104,14 +142,54 @@ div.person div.left div.list ul.menu li a::after{
   left: 50%;
   transform: translate(-50%) scaleX(0);
   opacity: 0;
-}
-div.person div.left div.list ul.menu li:hover a::after{
   transition: .2s ease-in-out;
 }
-/* left end */
-/* right start */
-div.person div.right{
-width: 29.16667%;
-margin-left: 4.16667%;
+
+div.person div.left div.list ul.menu li:hover a::after {
+  opacity: 1;
+  color: #2f2f2f;
+  transform: translate(-50%) scaleX(1);
 }
+div.person div.left div.list ul.menu li:hover a span{
+  color: #2f2f2f;
+}
+
+
+/* left end */
+
+
+/* right start */
+
+div.person div.right {
+  width: 29.16667%;
+  margin-left: 4.16667%;
+}
+div.person div.right  div.description{
+  margin-bottom: 16px;
+  padding: 0 0 16px;
+  text-align: center;
+  border-bottom: 1px solid #f0f0f0;
+  word-break: break-word!important;
+}
+div.person div.right  div.description div.intro{
+  margin-bottom: 10px;
+  line-height: 20px;
+}
+div.person div.right ul.user{
+  padding-bottom: 6px;
+  margin-bottom: 16px;
+list-style: none;
+border-bottom: 1px solid #f0f0f0;
+}
+div.person div.right ul.user li{
+  margin-bottom: 10px;
+  line-height: 20px;
+}
+div.person div.right ul.user li a{
+  text-decoration: none;
+  line-height: 30px;
+  vertical-align: middle;
+}
+
+
 /* right end */
