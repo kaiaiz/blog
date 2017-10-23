@@ -101,10 +101,7 @@ header.top main div.search button {
 
 /* header end */
 /* banner start */
-div.banner{
-  height: 600px;
-  background: red;
-}
+
 /* banner end */
 /* container start */
 div.container{
@@ -243,5 +240,42 @@ hr{
   margin: 10px 0;
   box-sizing: content-box;
   width: 100%;
+}
+div.label p span{
+  font-size: 20px;
+  font-weight: 500;
+  color: #333;
+}
+div.label div.tag-ui{
+  padding: 10px;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.bg-blue{
+  border-color: #0ae;
+  background-color: #0ae;
+}
+.bg-yellow{
+  border-color: #f60;
+  background-color: #f60;
+}
+.bg-green{
+  border-color: #5d8;
+  background-color: #5d8;
+}
+.bg-red{
+  border-color: #e33;
+  background-color: #e33;
+}
+div.label div.tag-ui a.button{
+  padding: 4px 8px;
+  font-weight: normal;
+  text-decoration: none;
+  line-height: 16px;
+  border-radius: 4px;
+  color: #fff;
+  border: 1px solid #fff;
+  margin-right: 5px;
 }
 /* container end */
