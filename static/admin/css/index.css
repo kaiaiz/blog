@@ -29,6 +29,7 @@ nav.system {
   height: 100%;
   background-color: #2f4050;
   border-color: #2f4050;
+  transition: all .5s;
 }
 
 nav.system ul {
@@ -79,6 +80,7 @@ section.page div.top button.btn-primary {
   border-radius: 3px;
   padding: 4px 12px;
   margin: 14px 5px 5px 20px;
+  cursor: pointer;
 }
 
 section.page div.content-tabs {

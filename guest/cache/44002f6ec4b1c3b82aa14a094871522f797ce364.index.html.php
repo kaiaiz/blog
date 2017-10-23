@@ -1,3 +1,25 @@
+<?php
+/* Smarty version 3.1.31, created on 2017-10-23 11:11:44
+  from "D:\wamp64\www\project\blog\template\admin\index.html" */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.31',
+  'unifunc' => 'content_59edce70534785_73151255',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    'c14656816194d910e5ea861495a33548942b46d5' => 
+    array (
+      0 => 'D:\\wamp64\\www\\project\\blog\\template\\admin\\index.html',
+      1 => 1508757058,
+      2 => 'file',
+    ),
+  ),
+  'cache_lifetime' => 3600,
+),true)) {
+function content_59edce70534785_73151255 (Smarty_Internal_Template $_smarty_tpl) {
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,10 +28,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
-  <link rel="stylesheet" href="{$css}">
-  <link rel="stylesheet" href="{$iconfont}">
-  <script src="{$js}jquery-3.2.1.js"></script>
-  <script src="{$js}index.js"></script>
+  <link rel="stylesheet" href="http://localhost/project/blog/static/admin/css/index.css">
+  <link rel="stylesheet" href="http://localhost/project/blog/static/admin/iconfont/iconfont.css">
+  <script src="http://localhost/project/blog/static/admin/js/jquery-3.2.1.js"></script>
+  <script src="http://localhost/project/blog/static/admin/js/index.js"></script>
 </head>
 
 <body>
@@ -73,4 +95,5 @@
   <!-- page end -->
 </body>
 
-</html>
+</html><?php }
+}

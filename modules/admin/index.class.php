@@ -8,6 +8,7 @@ class index
             // echo '<script>location.href="index.php?m=admin&f=login";</script>';
         // }else{
             $smarty=new Smarty_Guest();
+            $smarty->assign('js',STATIC_URL.'admin/js/');
             $smarty->assign('css',STATIC_URL.'admin/css/index.css');
             $smarty->assign('iconfont',STATIC_URL.'admin/iconfont/iconfont.css');
             $smarty->display(TPL_PATH.'admin/index.html');
