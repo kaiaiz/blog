@@ -8,6 +8,7 @@ define('LIBS_PATH',APP_PATH.'libs/');
 define('MODULES_PATH',APP_PATH.'modules/');
 define('TPL_PATH',APP_PATH.'template/');
 define('SMARTY_PATH',LIBS_PATH.'smarty/');
+define('STATIC_PATH',APP_PATH.'static/');
 define('GUEST_PATH',APP_PATH.'guest/');
 //服务器路径
 $protocal=$_SERVER['SERVER_PROTOCOL'];

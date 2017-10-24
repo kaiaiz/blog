@@ -64,6 +64,14 @@ section.center div.right form input[name=username]{
 section.center div.right form input[name=password]{
   background: #fff url(../img/locked.png) no-repeat 95% center;
 }
+section.center div.right form input[name=verification]{
+  width: 50%;
+}
+form > div{
+  height: 34px;
+  display: flex;
+  justify-content: space-between;
+}
 section.center div.right form button{
   margin-top: 15px;
   background-color: #1ab394;

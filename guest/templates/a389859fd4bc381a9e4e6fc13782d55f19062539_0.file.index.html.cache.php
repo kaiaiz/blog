@@ -1,0 +1,442 @@
+<?php
+/* Smarty version 3.1.31, created on 2017-10-24 06:27:08
+  from "D:\wamp64\www\project\blog\template\index\index.html" */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.31',
+  'unifunc' => 'content_59eedd3c9455d8_97544133',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    'a389859fd4bc381a9e4e6fc13782d55f19062539' => 
+    array (
+      0 => 'D:\\wamp64\\www\\project\\blog\\template\\index\\index.html',
+      1 => 1508720256,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_59eedd3c9455d8_97544133 (Smarty_Internal_Template $_smarty_tpl) {
+$_smarty_tpl->compiled->nocache_hash = '3030559eedd3c609e53_28860288';
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="<?php echo $_smarty_tpl->tpl_vars['css']->value;?>
+index.css">
+  <link rel="stylesheet" href="<?php echo $_smarty_tpl->tpl_vars['iconfont']->value;?>
+">
+  <link rel="stylesheet" href="<?php echo $_smarty_tpl->tpl_vars['css']->value;?>
+swiper.min.css">
+  <style>
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .pc-banner {
+      background: url(<?php echo $_smarty_tpl->tpl_vars['img']->value;?>
+/top_main_bg01.jpg) no-repeat center top/100% auto;
+      width: 100%;
+      float: left;
+    }
+
+    @media screen and (max-width: 668px) {
+      .pc-banner {
+        background-size: auto 100%;
+      }
+    }
+
+    .swiper-container {
+      width: 100%;
+      margin: 35px 0;
+    }
+
+    @media screen and (max-width: 668px) {
+      .swiper-container {
+        margin: 20px 0 15px;
+      }
+    }
+
+    .swiper-slide {
+      -webkit-transition: transform 1.0s;
+      -moz-transition: transform 1.0s;
+      -ms-transition: transform 1.0s;
+      -o-transition: transform 1.0s;
+      -webkit-transform: scale(0.7);
+      transform: scale(0.7);
+    }
+
+    @media screen and (max-width: 668px) {
+      .swiper-slide {
+        -webkit-transform: scale(0.97);
+        transform: scale(0.97);
+      }
+    }
+
+    .swiper-slide-active,
+    .swiper-slide-duplicate-active {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+
+    @media screen and (max-width: 668px) {
+      .swiper-slide-active,
+      .swiper-slide-duplicate-active {
+        -webkit-transform: scale(0.97);
+        transform: scale(0.97);
+      }
+    }
+
+    .none-effect {
+      -webkit-transition: none;
+      -moz-transition: none;
+      -ms-transition: none;
+      -o-transition: none;
+    }
+
+    .swiper-slide a {
+      background: #fff;
+      padding: 10px;
+      display: block;
+      border-radius: 14px;
+    }
+
+    @media screen and (min-width: 668px) {
+      .swiper-slide a:after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        box-sizing: border-box;
+        border: 10px solid #fff;
+        content: "";
+        width: 100%;
+        height: 100%;
+        background: url(<?php echo $_smarty_tpl->tpl_vars['img']->value;?>
+top_slick_cover_bg01.png) 0 0 repeat;
+        border-radius: 20px;
+      }
+    }
+
+    .swiper-slide-active a:after {
+      background: none;
+    }
+
+    @media screen and (max-width: 668px) {
+      .swiper-slide a {
+        padding: 5px;
+        border-radius: 7px;
+      }
+    }
+
+    .swiper-slide img {
+      width: 100%;
+      border-radius: 14px;
+      display: block;
+    }
+
+    @media screen and (max-width: 668px) {
+      .swiper-slide img {
+        border-radius: 7px;
+      }
+    }
+
+    .swiper-pagination {
+      position: relative;
+      margin-bottom: 30px;
+    }
+
+    .swiper-pagination-bullet {
+      background: #00a0e9;
+      margin-left: 4px;
+      margin-right: 4px;
+      width: 17px;
+      height: 17px;
+      opacity: 1;
+      margin-bottom: 4px;
+    }
+
+    .swiper-pagination-bullet-active {
+      width: 13px;
+      height: 13px;
+      background: #FFF;
+      border: 6px solid #00a0e9;
+      margin-bottom: 0;
+    }
+
+    @media screen and (max-width: 668px) {
+
+      .swiper-pagination {
+        position: relative;
+        margin-bottom: 20px;
+      }
+
+      .swiper-pagination-bullet {
+        background: #00a0e9;
+        margin-left: 2px;
+        margin-right: 2px;
+        width: 8px;
+        height: 8px;
+        margin-bottom: 2px;
+      }
+
+      .swiper-pagination-bullet-active {
+        width: 6px;
+        height: 6px;
+        background: #FFF;
+        border: 3px solid #00a0e9;
+        margin-bottom: 0;
+      }
+    }
+
+    .button {
+      width: 1000px;
+      margin: 0 auto;
+      bottom: 43px;
+      position: relative;
+    }
+
+    @media screen and (max-width: 668px) {
+      .button {
+        width: 70%;
+        bottom: 22px;
+      }
+    }
+
+    .button div:hover {
+      background-color: #2f4798;
+    }
+
+    .swiper-button-prev {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l4.2%2C4.2L8.4%2C22l17.8%2C17.8L22%2C44L0%2C22z'%20fill%3D'%23ffffff'%2F%3E%3C%2Fsvg%3E") #00a0e9 center 50%/50% 50% no-repeat;
+    }
+
+    .swiper-button-next {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L5%2C44l-4.2-4.2L18.6%2C22L0.8%2C4.2L5%2C0z'%20fill%3D'%23ffffff'%2F%3E%3C%2Fsvg%3E") #00a0e9 center 50%/50% 50% no-repeat;
+    }
+
+    @media screen and (max-width: 668px) {
+      .button div {
+        width: 28px;
+        height: 28px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- header start -->
+  <header class="top">
+    <main class="content">
+      <a href="" class="left">
+        <img src="<?php echo $_smarty_tpl->tpl_vars['img']->value;?>
+logo.png" height="40px" alt="">
+      </a>
+      <ul class="caption">
+        <li>
+          <a href="" class="active">首页</a>
+        </li>
+        <li>
+          <a href="">说说</a>
+        </li>
+        <li>
+          <a href="">留言板</a>
+        </li>
+        <li>
+          <a href="">访客</a>
+        </li>
+        <li>
+          <a href="">关于我</a>
+        </li>
+      </ul>
+      <div class="search">
+        <form action="">
+          <div>
+            <input type="text" placeholder="请输入关键字">
+            <button type="submit" class="iconfont">
+              <span class="iconfont">&#xe61e</span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </main>
+  </header>
+  <!-- header end -->
+  <!-- banner start -->
+  <section class="pc-banner">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide swiper-slide-center none-effect">
+          <a href="#">
+            <img src="images/top_hero_conc_2017.jpg">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#">
+            <img src="<?php echo $_smarty_tpl->tpl_vars['img']->value;?>
+top_hero_cs_2017.jpg">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#">
+            <img src="<?php echo $_smarty_tpl->tpl_vars['img']->value;?>
+top_hero_cw_im17.jpg">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#">
+            <img src="<?php echo $_smarty_tpl->tpl_vars['img']->value;?>
+top_hero_hakko.jpg">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#">
+            <img src="<?php echo $_smarty_tpl->tpl_vars['img']->value;?>
+top_hero_karadacalpis_im02.jpg">
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="button">
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </section>
+  <!-- Swiper JS -->
+  <?php echo '<script'; ?>
+ src="<?php echo $_smarty_tpl->tpl_vars['js']->value;?>
+swiper.min.js"><?php echo '</script'; ?>
+>
+
+  <!-- Initialize Swiper -->
+  <?php echo '<script'; ?>
+>
+    window.onload = function () {
+      var swiper = new Swiper('.swiper-container', {
+        autoplay: 3000,
+        speed: 1000,
+        autoplayDisableOnInteraction: false,
+        loop: true,
+        centeredSlides: true,
+        slidesPerView: 2,
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        prevButton: '.swiper-button-prev',
+        nextButton: '.swiper-button-next',
+        onInit: function (swiper) {
+          swiper.slides[2].className = "swiper-slide swiper-slide-active"; //第一次打开不要动画
+        },
+        breakpoints: {
+          668: {
+            slidesPerView: 1,
+          }
+        }
+      });
+    }
+  <?php echo '</script'; ?>
+>
+  <!-- banner end -->
+</body>
+<div class="container">
+  <main class="content">
+    <ul class="tabs">
+      <li>
+        <span class="iconfont">&#xe635;</span>
+        <a href="">首页</a>
+      </li>
+      <li>
+        <a href="">最新文章</a>
+      </li>
+    </ul>
+    <div class="blog">
+      <div class="left">
+        <ul>
+          <li>
+            <div class="detail">
+              <span>原创</span>
+              <a href="">Windows环境PHP扩展Redis教程</a>
+            </div>
+            <div class="article">
+              <a href="">
+                <img src="<?php echo $_smarty_tpl->tpl_vars['img']->value;?>
+article01.png" width="100%" height="100%" alt="">
+              </a>
+              <p class="remark">
+                在php中使用Redis你必须使用Redis的PHP驱动，本文通过图文的方式引导用户在windows环境下PHP扩展Redis驱动
+              </p>
+            </div>
+            <div class="info">
+              <p>
+                <span class="iconfont">&#xe76d;</span>
+                <span class="date interval">2017</span>
+                <span class="iconfont">&#xe669;</span>
+                <span class="author interval">aa</span>
+                <span class="iconfont">&#xe620;</span>
+                <span class="eye interval">323</span>
+                <span class="iconfont">&#xe669;</span>
+                <span class="message interval">32</span>
+                <span class="iconfont">&#xe602;</span>
+                <span class="favorite">32</span>
+              </p>
+              <a href="" class="look">查看全部</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="right">
+        <div class="login">
+          <p>
+            <span class="iconfont">&#xe62b;</span>
+            <span>用户登陆</span>
+          </p>
+          <div>
+            <a href="index.php?m=index&f=login">前往登陆</a>
+          </div>
+        </div>
+        <hr />
+        <div class="label">
+          <p>
+            <span class="iconfont">&#xe6a1;</span>
+            <span class="text">标签</span>
+          </p>
+          <div class="tag-ui">
+            <a href="" class="button bg-yellow">php</a>
+            <a href="" class="button bg-blue">mysql</a>
+            <a href="" class="button bg-green">java</a>
+            <a href="" class="button bg-red">javabean</a>
+            <a href="" class="button bg-yellow">hodoop</a>
+            <a href="" class="button bg-red">ajax</a>
+            <a href="" class="button bg-green">正则</a>
+            <a href="" class="button bg-blue">book</a>
+            <a href="" class="button bg-red">world</a>
+            <a href="" class="button bg-yellow">hello</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+
+</html><?php }
+}
