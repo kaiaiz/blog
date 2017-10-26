@@ -1,0 +1,151 @@
+html,
+body,
+tbody,
+tr,
+th {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  color: #5c5c5c;
+  text-decoration: none;
+}
+
+/* cart-header start  */
+
+table.cart-header {
+  margin-bottom: 20px;
+  color: #5c5c5c;
+  width: 100%;
+}
+
+table.cart-header tr th {
+  padding: 12px 0;
+  background-color: #f7f7f7;
+  font-weight: normal;
+}
+
+table tr .checkout {
+  width: 48px;
+}
+
+table tr .cart-info {
+  width: 335px;
+}
+
+table tr .cart-price {
+  width: 155px;
+}
+
+table tr .cart-picker {
+  width: 140px;
+}
+
+table tr .cart-amount {
+  width: 155px;
+}
+
+table tr .cart-action {
+  width: 116px;
+}
+
+
+/* cart-header end*/
+
+div.car-list ul {
+  list-style: none;
+}
+
+div.car-list ul li {
+  border: 1px solid #e4e4e4;
+}
+
+div.car-list ul li table {
+  table-layout: fixed;
+  font-size: 12px;
+}
+
+div.car-list table.basic td {
+  text-align: center;
+}
+
+div.car-list table.basic td:first-child>span ,.checkbox{
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  vertical-align: middle;
+  text-align: center;
+  border: 1px solid #bdbdbd;
+  background-color: #fff;
+}
+
+div.car-list table.basic td.checkout>span:hover {
+  border: 1px solid #0aa082;
+  background-color: #0aa082;
+  color: #fff;
+}
+
+div.car-list table.basic td.cart-info {
+  display: flex;
+  justify-content: flex-start;
+}
+
+div.car-list table.basic td.cart-info>a {
+  width: 80px;
+  height: 80px;
+  border: 1px solid #e4e4e4;
+  display: block;
+}
+
+div.car-list table.basic td.cart-info div.detail {
+  margin-left: 95px;
+}
+
+div.car-list table.basic td.cart-info div.detail p {
+  font-size: 13px;
+}
+
+div.car-list table.basic td.cart-price {
+  color: #f05f50;
+}
+
+div.car-list table.basic td.cart-picker div.num {
+  border: 1px solid #e4e4e4;
+}
+
+div.car-list table.basic td.cart-picker div.num span.picker-button {
+  height: 30px;
+  line-height: 30px;
+  vertical-align: middle;
+  background-color: #f7f7f7;
+  width: 30px;
+  text-align: center;
+  cursor: pointer;
+  color: #5c5c5c;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+div.car-list table.basic td.cart-price div.num span:nth-child(2) {
+  text-align: center;
+  vertical-align: middle;
+  padding: 0 5px;
+  width: 35px;
+  line-height: 30px;
+  color: #5c5c5c;
+}
+
+div.car-list table.basic td.cart-amount span {
+  color: #f05f50;
+}
+
+div.car-list table.basic td.cart-action button{
+  background-color: transparent;
+  box-shadow: inset 0 0 0 1px #e4e4e4;
+  color: #5c5c5c;
+  padding: 8px 12px;
+  cursor: pointer;
+}

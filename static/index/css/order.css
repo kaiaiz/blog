@@ -1,0 +1,63 @@
+.content{
+  width: 1024px;
+  margin: 0 auto;
+}
+
+.active{
+  color: #0aa082!important;
+  border-bottom: 2px solid #0aa082;
+}
+div.market div.header{
+  font-size: 18px;
+  line-height: 22px;
+  padding-bottom: 30px;
+  padding-top: 40px;
+  font-weight: 700;
+}
+div.market div.section ul{
+list-style: none;
+margin-bottom: 20px;
+display: flex;
+justify-content: flex-start;
+}
+div.market div.section ul li a{
+  height: 24px;
+  line-height: 24px;
+  font-size: 16px;
+  margin-right: 30px;
+  color: #5c5c5c;
+  text-decoration: none;
+}
+div.market div.section ul li a span{
+  font-size: 14px;
+  margin-left: 5px;
+}
+div.market div.section div.list{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  height: 600px;
+}
+div.market div.section div.list iframe{
+width: 100%;
+height: 100%;
+}
+/* cart-fixed start */
+div.cart-fixed{
+  position: fixed;
+  z-index: 1;
+  border-bottom: 1px solid #e4e4e4;
+}
+div.cart-fixed div.cart-footer{
+  padding: 15px 40px 15px 15px;
+  line-height: 36px;
+  background-color: #eee;
+  vertical-align: middle;
+  display: flex;
+  justify-content: space-between;
+}
+div.cart-fixed div.cart-footer div.action label span:last-child{
+  margin-left: 20px;
+}
+/* cart-ficed end */

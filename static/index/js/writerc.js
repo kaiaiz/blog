@@ -1,8 +1,8 @@
 window.addEventListener('DOMContentLoaded',
 function(){
-  $('a.cate').click(
+  $('a.note').click(
     function(){
-      $('a.cate').removeClass('active');
+      $('a.note').removeClass('active');
       $(this).addClass('active');
     }
   );

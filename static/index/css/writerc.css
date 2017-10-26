@@ -29,7 +29,7 @@ div.new-note a span:first-child {
 }
 
 ul.notes {
-  margin: 0 0 10px 25px;
+  margin: 0 0 10px 0;
   list-style: none;
 }
 
