@@ -49,7 +49,6 @@ section.center div.right form p{
 }
 section.center div.right form input{
   color: #333;
-  margin-top: 15px;
   border: 1px solid #e5e6e7;
   border-radius: 1px;
   padding: 6px 12px;
@@ -64,16 +63,26 @@ section.center div.right form input[name=username]{
 section.center div.right form input[name=password]{
   background: #fff url(../img/locked.png) no-repeat 95% center;
 }
-section.center div.right form input[name=verification]{
-  width: 50%;
-}
-form > div{
+form > div.code{
   height: 34px;
   display: flex;
   justify-content: space-between;
+  margin-top: 15px;
+}
+form > div.code div{
+  display: flex;
+  flex-wrap: wrap;
+  width: 40%;
+}
+form  label.error{
+  color: #fff;
+  font-weight: 700;
+}
+section.center div.right form input[name=verification]{
+  width:100%;
 }
 section.center div.right form button{
-  margin-top: 15px;
+  margin-top: 30px;
   background-color: #1ab394;
   border-color: #1ab394;
   color: #fff;

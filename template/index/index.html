@@ -1,11 +1,4 @@
-﻿<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+﻿{include file = 'template/index/header.html'}
   <link rel="stylesheet" href="{$css}index.css">
   <link rel="stylesheet" href="{$iconfont}">
   <link rel="stylesheet" href="{$css}swiper.min.css">
@@ -23,6 +16,7 @@
       background: url({$img}/top_main_bg01.jpg) no-repeat center top/100% auto;
       width: 100%;
       float: left;
+      margin-top: 40px;
     }
 
     @media screen and (max-width: 668px) {
@@ -212,52 +206,13 @@
       }
     }
   </style>
-</head>
-
-<body>
-  <!-- header start -->
-  <header class="top">
-    <main class="content">
-      <a href="" class="left">
-        <img src="{$img}logo.png" height="40px" alt="">
-      </a>
-      <ul class="caption">
-        <li>
-          <a href="" class="active">首页</a>
-        </li>
-        <li>
-          <a href="">说说</a>
-        </li>
-        <li>
-          <a href="">留言板</a>
-        </li>
-        <li>
-          <a href="">访客</a>
-        </li>
-        <li>
-          <a href="">关于我</a>
-        </li>
-      </ul>
-      <div class="search">
-        <form action="">
-          <div>
-            <input type="text" placeholder="请输入关键字">
-            <button type="submit" class="iconfont">
-              <span class="iconfont">&#xe61e</span>
-            </button>
-          </div>
-        </form>
-      </div>
-    </main>
-  </header>
-  <!-- header end -->
   <!-- banner start -->
   <section class="pc-banner">
     <div class="swiper-container">
       <div class="swiper-wrapper">
         <div class="swiper-slide swiper-slide-center none-effect">
           <a href="#">
-            <img src="images/top_hero_conc_2017.jpg">
+            <img src="{$img}top_hero_conc_2017.jpg">
           </a>
         </div>
         <div class="swiper-slide">
@@ -380,16 +335,16 @@
             <span class="text">标签</span>
           </p>
           <div class="tag-ui">
-            <a href="" class="button bg-yellow">php</a>
-            <a href="" class="button bg-blue">mysql</a>
-            <a href="" class="button bg-green">java</a>
-            <a href="" class="button bg-red">javabean</a>
-            <a href="" class="button bg-yellow">hodoop</a>
-            <a href="" class="button bg-red">ajax</a>
-            <a href="" class="button bg-green">正则</a>
-            <a href="" class="button bg-blue">book</a>
-            <a href="" class="button bg-red">world</a>
-            <a href="" class="button bg-yellow">hello</a>
+            <a href="" class="label bg-yellow">php</a>
+            <a href="" class="label bg-blue">mysql</a>
+            <a href="" class="label bg-green">java</a>
+            <a href="" class="label bg-red">javabean</a>
+            <a href="" class="label bg-yellow">hodoop</a>
+            <a href="" class="label bg-red">ajax</a>
+            <a href="" class="label bg-green">正则</a>
+            <a href="" class="label bg-blue">book</a>
+            <a href="" class="label bg-red">world</a>
+            <a href="" class="label bg-yellow">hello</a>
           </div>
         </div>
       </div>

@@ -1,21 +1,10 @@
-{* include file='header.html' *}
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-  <link rel="stylesheet" href="{$detailsCss}">
-</head>
-
-<body>
+{include file = 'template/index/header.html'}
+ <link rel="stylesheet" href="{$css}details.css">
   <!-- container start -->
   <div class="container">
     <main class="content">
       <!-- left start -->
-      <div>
+      <div class="left">
         <article class="main-column">
           <p class="title">ThinkPHP中where()方法的使用</p>
           <p class="info">
@@ -33,8 +22,7 @@
                 <img src="{$img}message01.png" alt="">
               </a>
               <div class="sign">
-                <a href="index.php?m=index&f=login">登录</a>
-                <span>后发表评论</span>
+                <a href="index.php?m=index&f=login">发表评论</a>
               </div>
             </form>
           </div>

@@ -6,18 +6,18 @@ class Mysql
     protected $option=array();//sql语句选项
     function __construct($config = array())
     {
-        $host=isset($config['host'])?$config['host']:'localhost';
-        $port=isset($config['port'])?$config['port']:'3306';
-        $username=isset($config['username'])?$config['username']:'root';
-        $username=isset($config['password'])?$config['password']:'root';
-        $username=isset($config['dbname'])?$config['dbname']:'mysql';
+        $config['database']['host']=isset($config['database']['host'])?$config['database']['host']:'localhost';
+        $config['database']['port']=isset($config['database']['port'])?$config['database']['port']:'3306';
+        $config['database']['username']=isset($config['database']['username'])?$config['database']['username']:'root';
+        $config['database']['password']=isset($config['database']['password'])?$config['database']['password']:'zhangkaiqi';
+        $config['database']['dbname']=isset($config['database']['dbname'])?$config['database']['dbname']:'art';
         $this->option['table']=$this->option['where']=$this->option['order']=$this->option['limit']='';
         $this->option['field']=' * ';
 
         $this->connect($config);
         $this->setChar($charset = '');//数据库编码
     }
-    protected function connect($config = array())
+    protected function connect($config)
     {
           // 创建连接
         $this->db=new mysqli($config['database']['host'], $config['database']['username'], $config['database']['password'], $config['database']['dbname'], $config['database']['port']);
@@ -25,7 +25,7 @@ class Mysql
         if ($this->db->connect_error) {
               die('数据库连接失败'.$this->error().'<br />');
         } else {
-            echo '连接数据库成功<br />';
+            // echo '连接数据库成功<br />';
         }
     }
     protected function setChar($charset = 'utf8')

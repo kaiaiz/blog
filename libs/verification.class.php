@@ -46,7 +46,7 @@ class Verification
     public function setFontColor($color)
     {
         if (empty($color)) {
-            $this->fontColor=$this.getRandomColor();
+            $this->fontColor=$this.getRandomColor('font');
         } else {
             $this->fontColor=sscanf($color, '#$2x%2x%2x');
         }
@@ -58,7 +58,7 @@ class Verification
     public function setFontSize($size = 0)
     {
         if (empty($size)) {
-            $this->fontSize=array('false',mt_rand(15, 40));
+            $this->fontSize=array('false',mt_rand(20, 40));
         } else {
             $arr=explode($size);
             $this->fontSize=array('true',mt_rand($arr[0], $arr[1]));
@@ -109,7 +109,7 @@ class Verification
     public function setNoiseLine($num = 0)//注意，若不传参会出错!!!
     {
         if (empty($num)) {
-            $this->noiseLineNum=mt_rand(3, 5);
+            $this->noiseLineNum=mt_rand(2, 3);
         } else {
             $arr=explode(',', $angle);
             $this->noiseLineNum=mt_rand($arr[0], mt_rand[1]);
@@ -129,7 +129,7 @@ class Verification
         }
         $this->image=imagecreatetruecolor($this->width, $this->height);
         if (empty($this->bgColor)) {
-                  $this->bgColor=$this->getRandomColor();
+                  $this->bgColor=$this->getRandomColor('bgColor');
         } else {
                 $this->bgColor=imagecolorallocate($this->image, $this->bgColor[0], $this->bgColor[1], $this->bgColor[2]);
         }
@@ -138,7 +138,7 @@ class Verification
     /**
      * 获得随机颜色
     */
-    public function getRandomColor($type = 'bgColor')
+    public function getRandomColor($type)
     {
         $red=$type=='bgColor'?mt_rand(0, 120):mt_rand(121, 255);
         $green=$type=='bgColor'?mt_rand(0, 120):mt_rand(121, 255);
@@ -175,7 +175,7 @@ class Verification
     public function getNoisePoint()
     {
         for ($i=0; $i<$this->noisePointNum; $i++) {
-            imagesetpixel($this->image, mt_rand(0, $this->width), mt_rand(0, $this->height), $this->getRandomColor());
+            imagesetpixel($this->image, mt_rand(0, $this->width), mt_rand(0, $this->height), $this->getRandomColor('point'));
         }
         return $this;
     }
@@ -205,14 +205,16 @@ class Verification
                 $this->setFontSize();
                 $this->setFontAngle();
             }
-            $x=mt_rand($space*$key, $space*$key+$space)+mt_rand(-5, 5) ;
             $arr=imagettfbbox($this->fontSize[1], $this->fontAngle, $this->fontFamily, $value);
+            $x=mt_rand($space*$key, (($space*$key+$space)-($arr[2]-$arr[0])))+mt_rand(-2, 2);
             $y=abs($arr[5]-$arr[1]);
+            $interval=abs($this->height-$y);
+            $y+=mt_rand(0,$interval);
             // echo $value.' '.$y.'<br />';
             // echo $this->fontSize.' ';
-            imagettftext($this->image, $this->fontSize[1], $this->fontAngle, $x, $y, $this->getRandomColor(), $this->fontFamily, $value);
+            imagettftext($this->image, $this->fontSize[1], $this->fontAngle, $x, $y, $this->getRandomColor('font'), $this->fontFamily, $value);
         }
-            // imagettftext($this->image, $this->fontSize, $this->fontAngle, 50, 50, $this->getRandomColor(), $this->fontFamily, 'aa');
+            // imagettftext($this->image, $this->fontSize, $this->fontAngle, 50, 50, $this->getRandomColor('font'), $this->fontFamily, 'aa');
                 return $this;
     }
      

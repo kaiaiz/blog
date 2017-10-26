@@ -13,93 +13,6 @@ html,body{
 }
 
 
-/* header start */
-
-header.top {
-  background-color: rgba(255, 255, 255, .8);
-  border-bottom: solid 3px #0a8;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, .175);
-  position: fixed;
-  width: 100%;
-}
-
-header.top>main {
-  display: flex;
-  justify-content: space-between;
-}
-
-header.top main a.left {
-  text-decoration: none;
-  display: block;
-  padding: 10px 20px;
-}
-
-header.top main ul.caption {
-  list-style: none;
-  display: flex;
-  justify-content: space-around;
-  flex-grow: 1;
-}
-
-header.top main ul.caption li {
-  padding: 18px 20px;
-  line-height: 20px;
-  font-size: 18px;
-}
-
-.active {
-  color: #00AA88;
-  font-weight: bold;
-}
-
-header.top main ul.caption li a {
-  text-decoration: none;
-  color: #333;
-}
-
-header.top main div.search {
-  width: 33%;
-  display: flex;
-  justify-content: flex-start;
-}
-
-header.top main div.search form {
-  width: 100%;
-  display: flex;
-  align-items: center;
-}
-
-header.top main div.search form>div {
-  font-size: 0;
-  width: 100%;
-}
-
-header.top main div.search input {
-  width: 53%;
-  border: 1px solid #0a8;
-  height: 34px;
-  line-height: 20px;
-  border-radius: 1px;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
-  padding: 6px;
-  box-sizing: border-box;
-}
-
-header.top main div.search button {
-  background-color: #0a8;
-  color: #fff;
-  border: solid 1px #0a8;
-  border-radius: 2px;
-  padding: 6px 15px;
-  line-height: 20px;
-  cursor: pointer;
-  text-align: center;
-  vertical-align: middle;
-  margin-top: -8px;
-}
-
-
-/* header end */
 /* banner start */
 
 /* banner end */
@@ -268,7 +181,7 @@ div.label div.tag-ui{
   border-color: #e33;
   background-color: #e33;
 }
-div.label div.tag-ui a.button{
+div.label div.tag-ui a.label{
   padding: 4px 8px;
   font-weight: normal;
   text-decoration: none;

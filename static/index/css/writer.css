@@ -1,0 +1,148 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+html,body{
+  width: 100%;
+  height: 100%;
+}
+body{
+  font-size: 14px;
+  line-height: 20px;
+  color: #555555;
+  -webkit-tap-highlight-color: transparent;
+  display: flex;
+  justify-content: flex-start;
+  font-family: -apple-system,SF UI Text,Arial,PingFang SC,Hiragino Sans GB,Microsoft YaHei,WenQuanYi Micro Hei,sans-serif;
+}
+
+
+/* left start */
+
+div.left {
+  background-color: #3f3f3f;
+  width: 16.66667%;
+  box-sizing: border-box;
+}
+
+div.left div.home{
+  padding: 30px 19px 5px 18px;
+  text-align: center;
+}
+div.left div.home a{
+  padding: 9px 0;
+  color: #ec7259;
+  border: 1px solid rgba(236,114,89,0.7);
+  border-radius: 20px;
+  transition: 0.1s ease;
+  text-decoration: none;
+  vertical-align: middle;
+  display: block;
+}
+div.left div.home a:hover{
+  border-color: #ec7259;
+}
+div.left div.new{
+  padding: 0 15px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+div.left div.new > a{
+  text-decoration: none;
+  font-size: 11px;
+  color: #fff;
+}
+div.left div.new div.add form{
+  margin: 0 0 20px;
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+}
+div.left div.new div.add form input[type=text]{
+  width: 100%;
+  height: 35px;
+  box-sizing: border-box;
+  background-color: rgba(180,180,180,0.2);
+  border: 1px solid #2f2f2f;
+  color: #c8c8c8;
+  outline: none;
+  padding: 4px 6px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+div.left div.new div.add form input[type=submit]{
+  background-color: transparent;
+  border-radius: 20px;
+  border: 1px solid #34ab20;
+  color: #34ab20;
+  padding: 5px 20px;
+  outline: none;
+  cursor: pointer;
+}
+div.left div.new div.add form a{
+  padding-top: 6px;
+  color: #969696;
+  text-decoration: none;
+  border-radius: 2px;
+  margin-left: 10px;
+}
+/* list start */
+div.left ul.list{
+  list-style: none;
+}
+div.left ul.list li{
+  height: 40px;
+  transition: height 0.4s cubic-bezier(0, 0.34, 0.64, 1.37);
+  line-height: 27px;
+}
+div.left ul.list li:hover{
+
+}
+div.left ul.list li a{
+  display: block;
+  height: 34px;
+  line-height: 2.3;
+  color: whitesmoke;
+  border-left: 3px solid transparent;
+  padding: 3px 15px;
+  text-decoration: none;
+}
+div.left ul.list li a:hover{
+  background-color: #646464;
+  border-color:  #ec7259;
+}
+.active{
+  background-color: #646464;
+  border-color:  #ec7259;
+}
+/* list end */
+
+/* left end */
+
+
+/* center start */
+
+div.center{
+width: 25%;
+  box-sizing: border-box;
+}
+div.center iframe{
+  width: 100%;
+  height: 100%;
+}
+
+/* center end */
+
+
+/* right start */
+
+div.right{
+width: 58.33333%;
+  box-sizing: border-box;
+  padding: 20px 0 0 0;
+}
+div.right iframe{
+  width: 100%;
+  height: 100%;
+}
+/* right end */
