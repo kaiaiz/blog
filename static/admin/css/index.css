@@ -21,7 +21,10 @@ body {
   justify-content: space-between;
 }
 
-
+div.nav-mark{
+  width: 70px;
+  height: 100%;
+}
 /* nav start */
 
 nav.system {
@@ -31,6 +34,7 @@ nav.system {
   border-color: #2f4050;
   transition: all .3s;
   overflow: hidden;
+  position: fixed;
 }
 
 nav.system ul {
@@ -164,7 +168,7 @@ section.page div.maincontent{
 }
 section.page div.maincontent iframe{
   width: 100%;
-  height: 100%;
+  height: 1000px;;
   transition: all .5s;
 }
 

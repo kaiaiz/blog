@@ -1,0 +1,150 @@
+div.wallet {
+  width: 100%;
+}
+
+main.content {
+  width: 960px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+th,td{
+  text-align: center;
+}
+.avatar {
+  width: 80px;
+  height: 80px;
+  margin-right: 15px;
+  vertical-align: middle;
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+}
+
+
+/* row-top start */
+
+div.row-top {
+  margin-top: 10px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+
+div.row-top div.user {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+div.row-top div.user div.info {
+  vertical-align: middle;
+  padding: 15px 0 0 0;
+}
+
+div.row-top div.user div.info a {
+  font-size: 21px;
+  font-weight: 700;
+  color: #333;
+}
+
+div.row-top div.middle {
+  padding: 10px 55px;
+  border-left: 1px solid #e4e4e4;
+  border-right: 1px solid #e4e4e4;
+  width: 41.66667%;
+}
+
+div.row-top div.middle span.account-money {
+  margin-right: 20px;
+  font-size: 16px;
+  color: #969696;
+}
+
+div.row-top div.middle span.main-money {
+  font-size: 28px;
+}
+
+div.row-top div.middle span.sub-money {
+  font-size: 18px;
+}
+
+div.row-top div.middle div.action {
+  margin-top: 20px;
+}
+
+div.row-top div.middle div.action button.charge {
+  padding: 6px 0;
+  width: 80px;
+  margin-right: 15px;
+  font-size: 15px;
+  border-radius: 40px;
+  background-color: #42c02e;
+  border: 1px solid #42c02e;
+  color: #fff;
+  outline: none;
+}
+
+div.row-top div.middle div.action button.charge:hover {
+  background-color: #3db922;
+  border: 1px solid #3db922;
+}
+
+div.row-top div.middle div.action button.topup {
+  padding: 6px 0;
+  width: 80px;
+  margin-right: 15px;
+  font-size: 15px;
+  border-radius: 40px;
+  border: 1px solid rgba(59, 194, 29, .7);
+  color: #42c02e!important;
+  opacity: .5;
+  background-color: #555;
+}
+
+div.row-top div.middle div.action div.action span {
+  color: #969696;
+  font-size: 13px;
+}
+
+
+/* row-top end */
+/* 充值模拟狂 */
+div.modal form{
+  margin: 0 0 20px;
+}
+div.modal form div.money-input{
+  margin-bottom: 40px;
+  line-height: 30px;
+  display: flex;
+  justify-content: flex-start;
+}
+div.modal form div.money-input label{
+  font-weight: 400;
+  margin-right: 30px;
+  line-height: 33px;
+}
+div.modal form div.money-input input{
+  color: #646464;
+  font-size: 32px;
+  line-height: 38px;
+  border: 1px solid #eee;
+  background-color: hsla(0,0%,71%,.1);
+  outline: none;
+}
+div.modal button[type=submit]{
+  border: 1px solid transparent;
+  font-weight: 400;
+  padding: 8px 45px;
+  font-size: 20px;
+  color: #fff;
+  border-radius: 25px;
+  background-color: #42c02e;
+}

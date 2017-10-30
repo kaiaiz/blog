@@ -6,6 +6,6 @@ return array(
     'port'=>'3306',
     'username'=>'root',
     'password'=>'zhangkaiqi',
-    'dbname'=>'art'
+    'dbname'=>'blog'
   )
 );

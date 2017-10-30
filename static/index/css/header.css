@@ -3,7 +3,9 @@ html,body,p,span,ul,li,th,td,a{
   padding: 0;
   font-size: 14px;
 }
-
+a{
+  text-decoration: none;
+}
 html,
 body {
   width: 100%;
@@ -13,7 +15,7 @@ body {
   font-family: Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,Noto Sans CJK SC,WenQuanYi Micro Hei,Arial,sans-serif;
 }
 
-.content {
+main.main {
   width: 1200px;
   margin: 0 auto;
 }
@@ -32,7 +34,7 @@ header.top {
 
 header.top>main {
   display: flex;
-  justify-content: space-between;
+  justify-main: space-between;
 }
 
 header.top main a.left {
@@ -44,7 +46,7 @@ header.top main a.left {
 header.top main ul.caption {
   list-style: none;
   display: flex;
-  justify-content: space-around;
+  justify-main: space-around;
   flex-grow: 1;
 }
 
@@ -109,7 +111,7 @@ header.top main ul.caption > li > ul li a > span:first-child{
 header.top main div.search {
   width: 33%;
   display: flex;
-  justify-content: flex-start;
+  justify-main: flex-start;
 }
 
 header.top main div.search form {
@@ -144,9 +146,23 @@ header.top main div.search button {
   cursor: pointer;
   text-align: center;
   vertical-align: middle;
-  margin-top: -8px;
 }
-
+header.top main a.write-btn{
+  width: 100px;
+  height: 40px;
+  line-height: 40px;
+  margin: 8px 15px 0;
+  border-radius: 20px;
+  font-size: 15px;
+  color: #fff;
+  background-color: #ea6f5a;
+  text-align: center;
+  font-weight: 400;
+}
+header.top main a.write-btn span{
+  margin-right: 5px;
+  /* display: inline-block; */
+}
 
 /* header end */
 div.head{

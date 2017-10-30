@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="{$iconfont}">
+  <link rel="stylesheet" href="{$css}bootstrap.min.css">
+  <link rel="stylesheet" href="{$css}categoryManager.css">
+</head>
+
+<body>
+  <div class="card">
+    <h1>管理</h1>
+    <table class="table .table-striped">
+      <thead>
+        <tr>
+          <th>
+            <span class="iconfont">&#xe623;</span>
+            ID</th>
+          <th>
+            <span class="iconfont">&#xe6ed;</span>
+            分类名</th>
+          <th>
+            <span class="iconfont">&#xe60e;</span>
+            缩略图</th>
+          <th>
+            <span class="iconfont">&#xe607;</span>
+            权限</th>
+          <th>
+            <span class="iconfont">&#xe61d;</span>
+            简介</th>
+          <th>
+            <span class="iconfont">&#xe651;</span>
+            操作</th>
+        </tr>
+      </thead>
+      <tbody>
+        {foreach $result as $row}
+        <tr>
+          {foreach $row as $key => $value} {if $key eq 'apass'} {continue} {/if}
+          <td class="active">{$value}</td>
+          {/foreach}
+          <td>
+            <button type="button" class="btn btn-primary">修改</button>
+            <button type="button" class="btn btn-danger">删除</button>
+          </td>
+        </tr>
+        {/foreach}
+      </tbody>
+    </table>
+  </div>
+</body>
+
+</html>

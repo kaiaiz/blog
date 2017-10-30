@@ -1,0 +1,83 @@
+{include file = 'template/index/header.html'}
+<link rel="stylesheet" href="{$css}bootstrap.min.css">
+<link rel="stylesheet" href="{$css}wallet.css">
+<div class="wallet">
+  <main class="content">
+    <!-- row-top start -->
+    <div class="row-top">
+      <div class="user">
+        <a href="" class="avatar">
+          <img src="{$img}a1.png" alt="">
+        </a>
+        <div class="info">
+          <a href="" class="name">幽谷草_434d</a>
+        </div>
+      </div>
+      <div class="middle">
+        <p class="money">
+          <span class="account-money">账户余额</span>
+          <span class="main-money">0</span>
+          <span class="sub-money">.00元</span>
+        </p>
+        <div class="action">
+          <button type="button" class="btn btn-primary btn-lg charge" data-toggle="modal" data-target="#myModal">
+            充值
+          </button>
+          <button type="button" class="btn btn-primary btn-lg topup" data-toggle="modal" data-target="#myModal">
+            提现
+          </button>
+          <span>*当前余额不足</span>
+        </div>
+      </div>
+    </div>
+    <table class="table table-striped table-hover">
+      <thead>
+        <tr>
+          <th>下单时间</th>
+          <th>文章标题</th>
+          <th>文章作者</th>
+          <th>金额</th>
+          <th>订单状态</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>2017.10.11</td>
+          <td>别说话</td>
+          <td>aa-a</td>
+          <td>3</td>
+          <td>已加入购物车</td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+</div>
+<!-- 充值模拟框 -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title" id="myModalLabel">充值</h4>
+      </div>
+      <div class="modal-body">
+        <form action="" id="myform">
+          <div class="money-input">
+            <label for="num">充值金额</label>
+            <input type="text" placeholder="0.00" id="num">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+        <button type="submit" class="btn btn-primary" form="myform">确认支付</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- row-top end -->
+<script src="{$js}jquery-3.2.1.js"></script>
+<script src="{$js}bootstrap.min.js"></script>
+</div>

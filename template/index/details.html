@@ -1,128 +1,141 @@
 {include file = 'template/index/header.html'}
- <link rel="stylesheet" href="{$css}details.css">
-  <!-- container start -->
-  <div class="container">
-    <main class="content">
-      <!-- left start -->
-      <div class="left">
-        <article class="main-column">
-          <p class="title">ThinkPHP中where()方法的使用</p>
-          <p class="info">
-            时间： 2015-10-19 17:12 作者：轮回 阅读：（1406）
-          </p>
-          <div class="main-content">
-            今天来给大家讲下查询最常用但也是最复杂的where方法，where方法也属于模型类的连贯操作方法之一，主要用于查询和操作条件的设置。 如果使用3.1以上版本的话，使用字符串条件的时候，建议配合预处理机制，确保更加安全，例如： 如果$id变量来自用户提交或者URL地址的话，如果传入的是非数字类型，则会强制格式化为数字格式后进行查询操作。
-            表达式不分大小写，支持的查询表达式有下面几种，分别表示的含义是： 查询表达式不仅可用于查询条件，也可以用于数据更新，例如：
+<link rel="stylesheet" href="{$css}details.css">
+<!-- container start -->
+<div class="container">
+  <main class="content">
+    <!-- left start -->
+    <div class="left">
+      <article class="main-column">
+        <p class="title">ThinkPHP中where()方法的使用</p>
+        <p class="info">
+          时间： 2015-10-19 17:12 作者：轮回 阅读：（1406）
+        </p>
+        <div class="main-content">
+          今天来给大家讲下查询最常用但也是最复杂的where方法，where方法也属于模型类的连贯操作方法之一，主要用于查询和操作条件的设置。 如果使用3.1以上版本的话，使用字符串条件的时候，建议配合预处理机制，确保更加安全，例如： 如果$id变量来自用户提交或者URL地址的话，如果传入的是非数字类型，则会强制格式化为数字格式后进行查询操作。
+          表达式不分大小写，支持的查询表达式有下面几种，分别表示的含义是： 查询表达式不仅可用于查询条件，也可以用于数据更新，例如：
+        </div>
+      </article>
+      <div class="comment">
+        <div class="message">
+          <form action="">
+            <a href="">
+              <img src="{$img}message01.png" alt="">
+            </a>
+            <div class="sign">
+              <a href="index.php?m=index&f=login">发表评论</a>
+            </div>
+          </form>
+        </div>
+        <div class="publish">
+          <div class="info">
+            <div class="pull-left">
+              <span>22条评论</span>
+              <a href="">只看作者</a>
+            </div>
+            <div class="pull-right">
+              <a href="" class="active-a">按喜欢排序</a>
+              <a href="">按时间正序</a>
+              <a href="">按时间倒序</a>
+            </div>
           </div>
-        </article>
-        <div class="comment">
-          <div class="message">
-            <form action="">
+        </div>
+        <div class="comment-list">
+          <div class="top">
+            <div class="author">
               <a href="">
-                <img src="{$img}message01.png" alt="">
+                <img src="{$img}message02.jpg">
               </a>
-              <div class="sign">
-                <a href="index.php?m=index&f=login">发表评论</a>
+              <div class="info">
+                <a href="">桀骜的上校</a>
+                <p>9楼 · 2017.10.23 08:17</p>
+              </div>
+            </div>
+            <div class="comment-warp">
+              <p>
+                很小就发觉自己看待事物跟别人的角度不一样，而且经常发现事物的灰暗面，估计这不叫批判性思维，而是负能量。
+              </p>
+              <div class="group">
+                <a href="">
+                  <span>8人赞</span>
+                </a>
+                <a href="">
+                  <span>回复</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="comment-sub">
+            <div class="comment-sub-list">
+              <p>
+                <a href="">唯我丶等你丶找它</a>
+                <span>@桀骜的上校</span> 和经历有关吧。
+              </p>
+              <div class="sub-group">
+                <span>2017.10.23 08:54</span>
+                <a href="">
+                  <span></span>回复
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="sub-commit">
+            <a href="" class="add-btn">
+              <span class="iconfont">&#xe610;</span>
+              <span>添加新评论</span>
+            </a>
+            <form action="">
+              <textarea name="" id="" cols="30" rows="10"></textarea>
+              <div class="write-function">
+                <a href="" class="send">发送</a>
+                <a href="" class="cancel">取消</a>
               </div>
             </form>
           </div>
-          <div class="publish">
-            <div class="info">
-              <div class="pull-left">
-                <span>22条评论</span>
-                <a href="">只看作者</a>
-              </div>
-              <div class="pull-right">
-                <a href="" class="active-a">按喜欢排序</a>
-                <a href="">按时间正序</a>
-                <a href="">按时间倒序</a>
-              </div>
-            </div>
-          </div>
-          <div class="comment-list">
-            <div class="top">
-              <div class="author">
-                <a href="">
-                  <img src="{$img}message.jpg">
-                </a>
-                <div class="info">
-                  <a href="">桀骜的上校</a>
-                  <p>9楼 · 2017.10.23 08:17</p>
-                </div>
-              </div>
-              <div class="comment-warp">
-                <p>
-                  很小就发觉自己看待事物跟别人的角度不一样，而且经常发现事物的灰暗面，估计这不叫批判性思维，而是负能量。
-                </p>
-                <div class="group">
-                  <a href="">
-                    <span>8人赞</span>
-                  </a>
-                  <a href="">
-                    <span>回复</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="comment-sub">
-              <div class="comment-sub-list">
-                <p>
-                  <a href="">唯我丶等你丶找它</a>
-                  <span>@桀骜的上校</span> 和经历有关吧。
-                </p>
-                <div class="sub-group">
-                  <span>2017.10.23 08:54</span>
-                  <a href="">
-                    <span></span>回复
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
-      <!-- left end -->
-      <!-- right start -->
-      <div class="side-column">
-        <div class="author">
-          <p class="header">关于作者</p>
-          <div class="section">
+    </div>
+    <!-- left end -->
+    <!-- right start -->
+    <div class="side-column">
+      <div class="author">
+        <p class="header">关于作者</p>
+        <div class="section">
+          <a href="">
+            <img src="{$img}author01.jpg" alt="">
+          </a>
+          <div>
+            <p>亜恵恵阿由</p>
+            <p>ビフォア クライム アフター デイズ</p>
+          </div>
+        </div>
+        <div class="answer">
+          <div class="board">
             <a href="">
-              <img src="{$img}author01.jpg" alt="">
+              <p>回答</p>
+              <p>679</p>
             </a>
-            <div>
-              <p>亜恵恵阿由</p>
-              <p>ビフォア クライム アフター デイズ</p>
-            </div>
-          </div>
-          <div class="answer">
-            <div class="board">
-              <a href="">
-                <p>回答</p>
-                <p>679</p>
-              </a>
-              <a href="">
-                <p>文章</p>
-                <p>0</p>
-              </a>
-              <a href="">
-                <p>关注者</p>
-                <p>1784</p>
-              </a>
-            </div>
-          </div>
-          <div class="member">
-            <button class="follow">
-              <span>+</span>
-              <span>关注他</span>
-            </button>
+            <a href="">
+              <p>文章</p>
+              <p>0</p>
+            </a>
+            <a href="">
+              <p>关注者</p>
+              <p>1784</p>
+            </a>
           </div>
         </div>
+        <div class="member">
+          <button class="follow">
+            <span>+</span>
+            <span>关注他</span>
+          </button>
+        </div>
       </div>
-      <!-- right end -->
-    </main>
-  </div>
-  <!-- container end -->
+    </div>
+    <!-- right end -->
+  </main>
+</div>
+<!-- container end -->
 </body>
 
 </html>
